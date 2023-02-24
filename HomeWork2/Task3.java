@@ -10,7 +10,7 @@ public class Task3 {
         System.out.print("Введите строку для проверки: ");
         String str = sc.nextLine();
         String str1 = str;
-        str = str.replaceAll("\\s+", "").toLowerCase();
+        str = str.replaceAll("\\s+", "").replaceAll("\\p{Punct}", "").toLowerCase();
         StringBuilder reverse = new StringBuilder(str).reverse();
         int count = 0;
         for (int i = 0; i < str.length() / 2; i++) {
