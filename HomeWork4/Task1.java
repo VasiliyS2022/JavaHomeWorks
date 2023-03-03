@@ -24,7 +24,7 @@ public class Task1 {
 
     public static void main(String[] args) {
         LinkedList<Integer> list = valuesList(10);
-        System.out.print("ИсходsourseListный список: ");
+        System.out.print("Исходный список: ");
         System.out.println(list);
         list = reverseList(list);
         System.out.print("Перевернутый список: ");
